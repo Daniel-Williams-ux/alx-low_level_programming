@@ -12,7 +12,7 @@ int c;
 for (c = 0; c < 26; ++c)
 putchar('a' + c);
 for (c = 0; c < 26; ++c)
-putchar('A' + c)<S-F11>;
+putchar('A' + c);
 
 putchar('\n');
 
