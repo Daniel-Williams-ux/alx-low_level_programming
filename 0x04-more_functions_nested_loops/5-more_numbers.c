@@ -10,8 +10,8 @@ void more_numbers(void)
 
 	for (c = 0; c < 10; c++)
 	{
-	      for (x = 0; x <= 14; x++)
-	      { 
+	       for (x = 0; x <= 14; x++)
+	       { 
 			if (x > 9)
 			{
 			_putchar((x / 10) + 48);
