@@ -20,7 +20,7 @@ if (!(i == 1 && j >= 5))
 {
 if (i)
 _putchar(i + 'a');
-_putchar(i + '0');
+_putchar(j + '0');
 }
 }
 }
