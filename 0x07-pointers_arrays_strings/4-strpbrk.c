@@ -1,19 +1,24 @@
 #include "main.h"
 
 /**
- * _strpbrk - finds first matching char in string
- * @s: input string to search for matching char
- * @accept: characters that could be matched
- * Return: pointer to matching char
+ * _strstr - returns pointer to first char of matching substring
+ * @haystack: string to find substring in
+ * @needle: substring to find match of
+ * Return: pointer to first char of matching substring
  */
 
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i, j;
+	int k;
 
-	for (i = 0; s[i] != '\0'; i++)
-		for (j = 0; accept[j] != '\0'; j++)
-			if (s[i] == accept[j])
-				goto exit;
-exit: return (s[i] != '\0' ? s + i : '\0');
+	while (*haystack != '\0')
+	{
+		k = 0;
+		while (*haystack == *needle && *haystack != '\0' && *needle != '\0')
+			haystack++, needle++, k++;
+		if (*needle == '\0')
+			return (haystack - k);
+		haystack -= (k - 1), needle -= k;
+	}
+	return ('\0');
 }
