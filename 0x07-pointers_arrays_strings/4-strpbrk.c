@@ -1,6 +1,6 @@
 /*
  * File: 4-strpbrk.c
- * Auth: Brennan D Baraban
+ * Auth: Daniel Williams
  */
 
 #include "main.h"
