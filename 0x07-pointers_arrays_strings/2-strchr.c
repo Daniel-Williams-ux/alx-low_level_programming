@@ -1,20 +1,17 @@
 #include "main.h"
 
 /**
- * _memcpy - input
- * @dest: input pointer to string destination
- * @src: input pointer to source string
- * @n: number of bytes
- * Return: pointer to destination string
+ * _strchr - locates a character in a string
+ * @s: string input
+ * @c: character to find
+ * Return: pointer to first occurence of c character
  */
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_strchr(char *s, char c)
 {
-	unsigned int i = 0;
+	unsigned int i;
 
-	while (i < n)
-	{
-		*(dest + i) = *(src + i);
-		i++;
-	}
-	return (dest);
+	for (i = 0; s[i] != '\0'; i++)
+		if (s[i] == c)
+			break;
+	return (s[i] == c ? (s + i) : '\0');
 }
