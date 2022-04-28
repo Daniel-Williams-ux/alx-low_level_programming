@@ -4,7 +4,7 @@
  * _pow_recursion - raises x to the power of y
  * @x: Number Integer
  * @y: Power
- * 
+ *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
