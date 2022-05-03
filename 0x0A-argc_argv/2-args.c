@@ -1,22 +1,27 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
- * main - Entry point
- * 
- * @argc: Counts the number of parameters that go into main
- * @argv: Pointer of array of pointers containing strings entering main
+ * main - Print the name of the program
+ * @argc: Count arguments
+ * @argv: Arguments
+ *
  * Return: Always 0 (Success)
  */
-int main(int argc, char **argv)
+
+int main(int argc, char *argv[])
 {
-	int i;
+
+	/*Declaring variables*/
+	int count = 0;
 
 	if (argc > 0)
 	{
-		for (i = 0; i < argc; i++)
+		/*WHILE - Print each arguments*/
+		while (count < argc)
 		{
-			printf("%s\n", argv[i]);
+			printf("%s\n", argv[count]);
+			count++;
 		}
 	}
 	return (0);
