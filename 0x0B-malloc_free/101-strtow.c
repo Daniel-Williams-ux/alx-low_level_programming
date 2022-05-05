@@ -44,7 +44,7 @@ char *_trspace(char *st)
  */
 char **strtow(char *str)
 {
-	char **s, *ts
+	char **s, *ts;
 	int l, l2, wc, i, j, fr, k;
 
 	if (str == NULL || *str == 0)
