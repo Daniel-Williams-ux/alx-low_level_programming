@@ -46,7 +46,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (tab == NULL)
 		return (NULL);
 
-
 	for (i = 0; i < (size * nmemb); i++)
 		tab[i] = '0';
 
@@ -146,4 +145,4 @@ int main(int argc, char *argv[])
         free(tabres);
         exit(EXIT_SUCCESS);
         return (0);
-}	
+}
