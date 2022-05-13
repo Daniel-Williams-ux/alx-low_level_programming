@@ -8,10 +8,8 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	    printf("Hello, my name is %s\n", name);
-}
-int main(void)
-{
-	     printf("Bob", print_name_as_is);
-	     return (0);
+	if (name == NULL || f == NULL)
+		return;
+
+	f(name);
 }
