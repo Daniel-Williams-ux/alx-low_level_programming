@@ -1,9 +1,6 @@
 #include "3-calc.h"
 #include <stdlib.h>
 
-#include "3-calc.h"
-#include <stdio.h>
-
 /**
  * get_op_func - returns a pointer to the function that corresponds to the
  * operator given as a parameter
