@@ -20,7 +20,7 @@ size_t print_list(const list_t *h)
 		else
 			print("[%d] %s\n", h->len, h->str);
 
-		nodes = nodes + 1;
+		nodes++;
 		h = h->next;
 	}
 
