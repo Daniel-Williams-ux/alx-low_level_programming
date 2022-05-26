@@ -58,7 +58,7 @@ size_t looped_listint_count(listint_t *head)
  *     the head of the listint_t list.
  *
  * Return: The size of the list that was freed.
- * 
+ *
  * Description: The function sets the head to NULL.
  */
 size_t free_listint_safe(listint_t **h)
