@@ -8,6 +8,7 @@
  * Return: void
  */
 
+
 int _strlen(const char *s)
 {
 int i = 0;
