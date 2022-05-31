@@ -11,16 +11,16 @@
 
 int _strlen(const char *s)
 {
-int i = 0;
-while (s[i])
-	i++;
+	int i = 0;
+	while (s[i])
+		i++;
 
-return (i);
+	return (i);
 }
 
 
 /**
- * binary_to_uint - Converts a binary number to an unsigned int.
+ * binary_to_uint - converts a binary number to an unsigned int
  * @b: binary number
  *
  * Return: 0 or converted number
